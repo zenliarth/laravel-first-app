@@ -2,6 +2,15 @@
 * {
     font-family: "Roboto", sans-serif;
 }
+html {
+    height: auto!important;
+}
+
+/* body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+} */ 
 
 a {
     color: #ddd;
@@ -10,4 +19,31 @@ a {
 }
 a:hover {
     color: #f24f00;    
+}
+
+.search {
+    background-image: url('../img/banner4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
+
+.linkred {
+    background: red;
+}
+.linkred:hover {
+    opacity: 0.8;
+}
+.linkblue {
+    background: #3363e1;
+}
+.linkblue:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+.min-width {
+    max-width: 600px;
+}
+footer {
+    bottom: 0 !important;
 }
