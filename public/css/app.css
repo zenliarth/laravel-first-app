@@ -1154,10 +1154,6 @@ select {
 	margin-top: auto;
 	margin-bottom: auto;
 }
-.mx-10 {
-	margin-left: 2.5rem;
-	margin-right: 2.5rem;
-}
 .mx-2 {
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
@@ -1239,6 +1235,12 @@ select {
 }
 .mr-1 {
 	margin-right: 0.25rem;
+}
+.ml-10 {
+	margin-left: 2.5rem;
+}
+.ml-5 {
+	margin-left: 1.25rem;
 }
 .block {
 	display: block;
@@ -1348,9 +1350,6 @@ select {
 .w-2\/4 {
 	width: 50%;
 }
-.w-32 {
-	width: 8rem;
-}
 .w-screen {
 	width: 100vw;
 }
@@ -1436,9 +1435,6 @@ select {
 }
 .flex-wrap {
 	flex-wrap: wrap;
-}
-.items-start {
-	align-items: flex-start;
 }
 .items-center {
 	align-items: center;
@@ -1582,21 +1578,13 @@ select {
 	--tw-border-opacity: 1;
 	border-color: rgba(243, 244, 246, var(--tw-border-opacity));
 }
-.border-gray-400 {
-	--tw-border-opacity: 1;
-	border-color: rgba(156, 163, 175, var(--tw-border-opacity));
-}
-.border-red-600 {
-	--tw-border-opacity: 1;
-	border-color: rgba(220, 38, 38, var(--tw-border-opacity));
-}
 .border-red-500 {
 	--tw-border-opacity: 1;
 	border-color: rgba(239, 68, 68, var(--tw-border-opacity));
 }
-.border-red-400 {
+.border-gray-400 {
 	--tw-border-opacity: 1;
-	border-color: rgba(248, 113, 113, var(--tw-border-opacity));
+	border-color: rgba(156, 163, 175, var(--tw-border-opacity));
 }
 .border-opacity-30 {
 	--tw-border-opacity: 0.3;
@@ -1808,6 +1796,9 @@ select {
 .pb-6 {
 	padding-bottom: 1.5rem;
 }
+.pl-5 {
+	padding-left: 1.25rem;
+}
 .text-left {
 	text-align: left;
 }
@@ -2010,10 +2001,6 @@ select {
 	--tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.shadow-2xl {
-	--tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
 .outline-none {
 	outline: 2px solid transparent;
 	outline-offset: 2px;
@@ -2033,10 +2020,6 @@ select {
 }
 .ring-opacity-5 {
 	--tw-ring-opacity: 0.05;
-}
-.drop-shadow-xl {
-	--tw-drop-shadow: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.03)) drop-shadow(0 8px 5px rgba(0, 0, 0, 0.08));
-	filter: var(--tw-filter);
 }
 .grayscale {
 	--tw-grayscale: grayscale(100%);

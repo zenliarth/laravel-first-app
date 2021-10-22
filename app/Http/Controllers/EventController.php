@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreEventRequest;
 use Illuminate\Http\Request;
 
 use App\Models\Event;
 use App\Models\User;
+use App\Models\EventUser;
 
 class EventController extends Controller
 {
@@ -25,8 +27,9 @@ class EventController extends Controller
 
         return view('welcome', ['events' => $events, 'search' => $search]);
     }
-    public function store(Request $request)
+    public function store(StoreEventRequest $request)
     {
+        $request->validated();
         $event = new Event;
 
         $event->title = $request->title;
@@ -143,6 +146,7 @@ class EventController extends Controller
     public function destroy($id)
     {
 
+        EventUser::where('event_id', $id)->delete();
         Event::findOrFail($id)->delete();
 
         return redirect('/dashboard')->with('msg', 'Evento excluído com sucesso!');

@@ -19,7 +19,7 @@
     <h2 class="ml-4 text-2xl text-gray-200">Próximos Eventos</h2>
     <p class="ml-4 text-gray-400">Veja os eventos dos próximos dias</p>
     @endif
-    <div id="cards-container" class="flex flex-wrap gap-4 mx-10 mt-6 items-start">
+    <div id="cards-container" class="flex flex-wrap gap-4 pl-5 mt-6 mx-auto">
         @foreach ($events as $event)
         <div id="card" class="flex flex-col w-48 h-72 gap-6 border border-opacity-30 rounded">
             <img class="w-48 h-2/4 rounded-t-sm rounded-r-sm" src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
