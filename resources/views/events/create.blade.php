@@ -9,6 +9,17 @@
     <h1 class="text-center py-4 text-3xl text-red-600">Criar Evento</h1>
     <form action="/events" method="POST" enctype="multipart/form-data">
       @csrf
+
+      @if ($errors->any())
+        <div class="bg-red-400 p-2 text-gray-900">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul> 
+        </div>
+      @endif
+
       <div class="py-2">
         <label class="text-gray-200" for="image">Imagem:</label>
         <input class="w-full py-1 text-gray-900 rounded-sm outline-none focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent" type="file" id="image" name="image">
